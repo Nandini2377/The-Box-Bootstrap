@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>The Box Page Bootstrap</title>
+</head>
+
+<body>
+  <!--nav-bar-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <div class="logo">
+        <img src="images/navbar/icon.png" alt="img" />
+        <img src="images/navbar/theBox.png" alt="icon" />
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--hero-->
+  <section class="hero-img position-relative">
+    <h1 class="hero-heading position-relative">
+      Building things is our mission.
+    </h1>
+    <div class="hero-contentbox position-absolute">
+      <div class="hero-main">
+        <p class="v2-heading text-white fw-bold d-flex justify-content-center">
+          Feature Projects
+        </p>
+        <p class="text-white fw-normal fs-5 fw-light text-center">
+          The National University of Architecture.
+        </p>
+      </div>
+
+      <div class="d-flex flex-row gap-1">
+        <div class="btn bg-dark text-light rounded-0 btn-custom">
+          <img class="h-100 p-1 pr-1" src="images/hero/arrow-left-solid.svg" />Back
+        </div>
+        <div class="btn bg-dark text-light rounded-0 btn-custom">
+          Next<img class="h-100 p-1" src="images/hero/arrow-right-solid.svg" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--reasons-->
+  <section>
+    <div class="mt-3 mb-3 text-center fw-semibold reason-heading mt-5 mb-4">
+      Our Reputation
+    </div>
+    <div class="container p-md-4 p-md-0">
+      <div class="d-flex flex-column gap-4 flex-md-row justify-content-center align-items-center">
+        <div class="reason-item rounded-1">
+          <img src="images/reputation/music.png" alt="music" />
+          <h6 class="pt-2 pb-2">Best Services</h6>
+          <p>Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
+        </div>
+        <div class="reason-item rounded-1">
+          <img src="images/reputation/music.png" alt="music" />
+          <h6 class="pt-2 pb-2">Best Teams</h6>
+          <p>Cursus semper tellus volutpat aliquet lacus.</p>
+        </div>
+        <div class="reason-item rounded-1">
+          <img src="images/reputation/pen.png" alt="pen" />
+          <h6 class="pt-2 pb-2">Best Designs</h6>
+          <p>Ultricies at ipsum nunc, tristique nam lectus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--about-us-->
+  <section
+    class="aboutus-section d-flex flex-column flex-lg-row justify-content-center align-items-center justify-content-lg-start align-items-lg-start">
+    <img class="aboutus-img mt-md-5 mt-4" src="images/about_us/about-us.jpg" alt="men-img" />
+    <div class="aboutus-text mt-2 rounded-1">
+      <h2 class="text-white aboutus-heading fw-md-4 fw-1 mt-2">About us</h2>
+
+      <div class="my-sm-5">
+        <p class="text-white aboutus-details text-left fs-6">
+          For more than 30 years we have been delivering world-class
+          construction and we've built many lasting relationships along the
+          way.
+        </p>
+        <p class="text-white aboutus-details text-left fs-6 d-none d-sm-block">
+          We've matured into an industry leader and trusted resource for those
+          seeking quality, innovation and reliability when building in the
+          U.S.
+        </p>
+      </div>
+      <div class="btn bg-white text-dark p-2 p-sm-3 aboutus-btn fw-bold text-left mt-4">
+        More on our history
+      </div>
+    </div>
+  </section>
+
+  <!--services-->
+  <section class="card-group-v5">
+    <h2 class="text-center fw-bold mt-5 pt-5 pb-3">Services</h2>
+    <div class="d-flex justify-content-center flex-wrap card-main-v5 gap-5 pb-5">
+      <div class="item-odd item-decor bg-light rounded-1">
+        <img src="images/services/construction.png" class="mt-3 position-relative top-0 start-50 translate-middle"
+          alt="construction" />
+        <hr class="w-25 position-relative top-0 start-50 translate-middle border-3 text-dark" />
+        <div class="text-center services-text fw-bold">Construction</div>
+      </div>
+      <div class="item-even rounded-1">
+        <img src="images/services/reovation.png" class="mt-3 position-relative top-0 start-50 translate-middle"
+          alt="Renovation" />
+        <hr class="w-25 position-relative top-0 start-50 translate-middle border-3 text-light" />
+        <div class="text-light text-center services-text fw-bold">
+          Renovation
+        </div>
+      </div>
+      <div class="item-odd bg-light rounded-1">
+        <img src="images/services/consultation.png" class="mt-3 position-relative top-0 start-50 translate-middle"
+          alt="consultation" />
+        <hr class="w-25 position-relative top-0 start-50 translate-middle border-3 text-dark" />
+        <div class="text-center services-text fw-bold">Consulation</div>
+      </div>
+      <div class="item-even rounded-1">
+        <img src="images/services/services.png" class="mt-3 position-relative top-0 start-50 translate-middle"
+          alt="services" />
+        <hr class="w-25 position-relative top-0 start-50 translate-middle border-3 text-light" />
+        <div class="text-light text-center fw-bold">Repair Services</div>
+      </div>
+      <div class="item-odd bg-light rounded-1">
+        <img src="images/services/architecture.png" class="mt-3 position-relative top-0 start-50 translate-middle"
+          alt="architecture" />
+        <hr class="w-25 position-relative top-0 start-50 translate-middle border-3 text-dark" />
+        <div class="text-center services-text fw-bold">Architecture</div>
+      </div>
+      <div class="item-even rounded-1">
+        <img src="images/services/electric.png" class="mt-3 position-relative top-0 start-50 translate-middle"
+          alt="electric" />
+        <hr class="w-25 position-relative top-0 start-50 translate-middle border-3 text-light" />
+        <div class="text-light text-center fw-bold">Electric</div>
+      </div>
+    </div>
+  </section>
+
+  <!--stats-->
+  <section class="stats">
+    <div class="card-v7 d-flex flex-column flex-md-row gap-4">
+      <div class="container container-v7 d-flex flex-column gap-3">
+        <div class="eextra d-flex flex-column justify-content-center mt-2 mt-lg-0">
+          <div class="container-hand container-v7-item">
+            <img src="images/stats/hand.png" class="float-end" alt="hand" />
+            <p class="card-num">84</p>
+            <pre class="card-v7-text"> Happy Clients</pre>
+          </div>
+
+          <div class="container-pen container-v7-item">
+            <img src="images/stats/pen.png" class="float-end" alt="pen" />
+            <p class="card-num">123</p>
+            <pre class="card-v7-text"> Project Completed</pre>
+          </div>
+
+          <div class="container-cup container-v7-item">
+            <img src="images/stats/cup.png" class="float-end" alt="cup" />
+            <p class="card-num">37</p>
+            <pre class="card-v7-text"> Awards win</pre>
+          </div>
+
+          <div class="container-pencil container-v7-item">
+            <img src="images/stats/pencil.png" class="float-end" alt="pencil" />
+            <p class="card-num">30</p>
+            <pre class="card-v7-text"> Years in Bussiness</pre>
+          </div>
+        </div>
+      </div>
+      <div class="card-v7-group2">
+        <h1 class="card-v7-topic">30 Years Experience</h1>
+        <p class="card-v7-details">
+          Our company has been the leading provided construction services to
+          clients throughout the USA since 1988.
+        </p>
+        <div class="text-center">
+          <button class="card-v7-button text-light border border-0 p-3 w-50 mt-4 rounded-1">
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--addvertisement-->
+  <section class="mt-5">
+    <div class="add-bg d-flex flex-sm-row flex-column justify-content-sm-center align-items-sm-center">
+      <div class="p-md-5 p-3">
+        <h2 class="fw-bold text-light">
+          Free consultation with exceptional quality
+        </h2>
+        <br />
+        <p class="text-light">Just one call away: <u>+84 1102 2703</u></p>
+      </div>
+      <div class="btn border border-2 border-light text-light rounded-1 p-sm-3 m-4">
+        Get your consultation
+      </div>
+    </div>
+  </section>
+
+  <!--projects-->
+  <section>
+    <div class="fw-bold projects mt-5 text-center text-lg-start">Project</div>
+
+    <div
+      class="project-container d-flex flex-column flex-lg-row justify-content-center align-items-center align-items-lg-start justify-lg-start">
+      <ul class="d-flex flex-row fw-bold project-list flex-lg-column">
+        <li class="project-item ml-5">
+          <a href="#" class="project-item-blue p-2">All</a>
+        </li>
+        <li class="project-item"><a href="#">Residential</a></li>
+        <li class="project-item"><a href="#">Commercial</a></li>
+        <li class="project-item"><a href="#">Others</a></li>
+      </ul>
+
+      <div class="project-cards d-flex flex-wrap justify-content-center align-items-center gap-5">
+        <div class="card rounded-0 border border-0" style="width: 18rem">
+          <img src="images/projects/wildstone.png" class="card-img-top" alt="wildstone" />
+          <div class="card-body">
+            <h5 class="card-title text-light fs-6 fw-bold">
+              Wildstone Infra Hotel
+            </h5>
+            <p class="card-text text-light">
+              2715 Ash Dr. San Jose, South Dakota
+            </p>
+          </div>
+        </div>
+
+        <div class="card rounded-0 border border-0" style="width: 18rem">
+          <img src="images/projects/building.png" class="card-img-top" alt="building" />
+          <div class="card-body">
+            <h5 class="card-title text-light fs-6 fw-bold">
+              Wish Stone Building
+            </h5>
+            <p class="card-text text-light">
+              2972 Westheimer Rd. Santa Ana, Illinois
+            </p>
+          </div>
+        </div>
+
+        <div class="card rounded-0 border border-0" style="width: 18rem">
+          <img src="images/projects/house.png" class="card-img-top" alt="house" />
+          <div class="card-body">
+            <h5 class="card-title text-light fs-6 fw-bold">
+              Mr. Parkinston's House
+            </h5>
+            <p class="card-text text-light">
+              3517 W. Gray St. Utica, Pennsylvania
+            </p>
+          </div>
+        </div>
+
+        <div class="card rounded-0 border border-0" style="width: 18rem">
+          <img src="images/projects/heights.png" class="card-img-top" alt="height" />
+          <div class="card-body">
+            <h5 class="card-title text-light fs-6 fw-bold">Oregano Height</h5>
+            <p class="card-text text-light">
+              2464 Royal Ln. Mesa, New Jersey
+            </p>
+          </div>
+        </div>
+
+        <div class="d-md-flex flex-row control-panal d-none">
+          <div class="btn bg-dark text-light rounded-0 btn-custom">
+            <img class="h-100 p-1 pr-1" src="images/hero/arrow-left-solid.svg" />Back
+          </div>
+          <div class="gap-3 mx-4 d-flex justify-content-between gap-5">
+            <div class="btn one rounded-circle p-1 mt-2 ml-3"></div>
+            <div class="btn dot rounded-circle p-1 mt-2"></div>
+            <div class="btn dot rounded-circle p-1 mt-2"></div>
+            <div class="btn dot rounded-circle p-1 mt-2"></div>
+            <div class="btn dot rounded-circle p-1 mt-2"></div>
+          </div>
+          <div class="btn bg-dark text-light rounded-0 btn-custom">
+            Next<img class="h-100 p-1" src="images/hero/arrow-right-solid.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--form-->
+  <section class="form pt-3 pb-5 mt-5">
+    <div class="text-center mt-5">
+      <div class="text-dark fw-bold form-heading">
+        What can us do for you?
+      </div>
+      <div class="text-dark form-heading-des p-1">
+        We are ready to work on a project of any complexity,<br />whether it’s
+        commercial or residential.
+      </div>
+    </div>
+
+    <div class="form-inputs m-auto d-flex flex-column gap-3 mt-4">
+      <div class="d-flex flex-md-row flex-column gap-3">
+        <input class="h-auto p-2 w-md-50 w-100 outline" type="text" placeholder="Your Name*" />
+        <input class="h-auto p-2 w-md-50 w-100 outline" type="email" placeholder="Email*" />
+      </div>
+
+      <div class="d-flex flex-md-row flex-column gap-3">
+        <input type="text" class="h-auto p-2 w-md-50 w-100 outline" placeholder="Reason for contacting*" />
+        <input class="h-auto p-2 w-md-50 w-100 outline" type="number" placeholder="Phone" />
+      </div>
+
+      <div class="d-flex flex-md-row flex-column">
+        <textarea name="address" cols="98" rows="8" placeholder="Message*"
+          class="form-input-email outline p-2"></textarea>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="btn border borer-0 p-2 form-btn text-light">Submit</div>
+      </div>
+    </div>
+  </section>
+
+  <!--bottom-->
+  <section class="bottom d-flex flex-md-row flex-column">
+    <div class="bottom-details w-sm-50 w-100">
+      <h2 class="pb-3">
+        <span class="bottom-heading">ADDRESS :&nbsp; </span><span class="fw-0" style="font-size: 18px">
+          6391 Elgin St. Celina, Delaware 10299</span>
+      </h2>
+      <h2 class="pb-3">
+        <span class="bottom-heading">PHONE: &nbsp; &nbsp; &nbsp;</span><span class="fw-0" style="font-size: 18px">+84
+          1120 2703</span>
+      </h2>
+      <h2 class="pb-3">
+        <span class="bottom-heading">EMAIL :&nbsp; &nbsp; &nbsp; </span><span class="fw-0"
+          style="font-size: 18px">hello@thebox.com</span>
+      </h2>
+      <div class="mt-4 logo mb-3">
+        <img src="images/navbar/icon.png" alt="img" />
+        <img src="images/navbar/theBox.png" alt="logo" />
+      </div>
+    </div>
+
+    <div class="w-md-50 w-100 ml-5">
+      <div class="bottom-heading mb-3">NEWSLETTER:</div>
+      <div>
+        <input type="email " placeholder="Your email here" class="w-md-25 w-50 p-1 outline" />
+        <div class="btn footer-btn text-light">Subscribe</div>
+      </div>
+
+      <div class="bottom-heading pt-4">SOCIAL:</div>
+      <div class="d-flex flex-row gap-3">
+        <img class="p-2 bottom-icon" src="images/bottom/facebook.png" alt="facebook" />
+        <img class="p-2 bottom-icon" src="images/bottom/vector.png" alt="vector" />
+        <img class="p-2 bottom-icon" src="images/bottom/twitter.png" alt="twitter" />
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+  <section class="footer-main">
+    <div class="footer-text text-light p-3">
+      TheBox Company © 2022. All Rights Reserved
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

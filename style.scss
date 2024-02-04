@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Work Sans", sans-serif !important;
+}
+
+$hover-color: #f9995d;
+$primary: #2947a9;
+
+@mixin img-style($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin text-style($size, $wight) {
+  font-size: $size;
+  font-weight: $wight;
+}
+
+/*nav*/
+
+.nav-link:hover {
+  color: $hover-color !important;
+}
+
+/*hero*/
+
+.hero-img {
+  background: url("images/hero/hero.png");
+  background-size: cover;
+  background-position: center;
+  @include img-style(90vh, 100%);
+}
+
+.hero-heading {
+  @include text-style(50px, 600);
+  @include img-style(auto, 90%);
+  top: 10%;
+  left: 10%;
+}
+
+.hero-main {
+  background-color: $primary;
+  padding: 20px 10px 10px 10px;
+  @include img-style(auto, 300px);
+}
+
+.btn-custom {
+  @include img-style(40px, 148px);
+}
+
+.hero-contentbox {
+  right: 3%;
+  bottom: 0%;
+}
+
+/*reputation*/
+
+.reason-heading {
+  @include text-style(36px, 700);
+  color: #292e3d;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.reason-item {
+  padding: 20px 20px 30px 20px;
+  border: 1px solid #e0e3eb;
+  &:hover {
+    cursor: pointer;
+  }
+  @include img-style(190px, 85vw);
+}
+
+/*about-us*/
+
+.aboutus-img {
+  @include img-style(auto, 85%);
+}
+
+.aboutus-text {
+  padding: 20px 25px 25px 40px;
+  background-color: $primary;
+  @include img-style(auto, 85%);
+}
+
+.aboutus-heading {
+  @include text-style(36px, 700);
+}
+
+.aboutus-btn {
+  margin-top: 5% !important;
+  color: $primary !important;
+}
+
+/*services*/
+.card-group-v5 {
+  background-color: #e0e3eb;
+}
+
+.item-even,
+.item-odd {
+  @include img-style(auto, 90%);
+  padding: 30px;
+}
+
+.item-even {
+  background-color: $primary;
+}
+
+.services-text {
+  color: $primary;
+}
+
+/*stats*/
+.card-num {
+  @include text-style(40px, 600);
+}
+
+.card-v7 {
+  padding: 10px;
+}
+
+.card-v7-text {
+  color: #667299;
+  @include text-style(16px, 400);
+  border-left: #f9995d 5px solid;
+}
+
+.card-v7-topic {
+  @include text-style(40px, 700);
+  color: $primary;
+}
+
+.card-v7-details {
+  @include text-style(20px, 400);
+  color: #667299;
+}
+
+.card-v7-button {
+  background-color: $primary;
+  float: center;
+}
+
+.container-v7-item {
+  box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05),
+    0px 12px 16px -4px rgba(17, 24, 39, 0.1);
+}
+
+/*adds*/
+.add-bg {
+  background: url("images/addvertisement/ads.png");
+  @include img-style(250px, 100%);
+}
+
+/*projects*/
+.projects {
+  @include text-style(36px, 700);
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+
+.project-list {
+  list-style-type: none;
+  @include text-style(15px, 500);
+  padding: 0px 20px 20px 20px !important;
+  &:hover {
+    cursor: pointer;
+    color: $primary;
+  }
+}
+
+.project-item {
+  padding: 5px;
+  a {
+    text-decoration: none !important;
+    color: #c2c7d6;
+    &:hover {
+      cursor: pointer;
+      border-bottom: 4px solid $primary;
+      color: $primary !important;
+    }
+  }
+}
+
+.project-container {
+  gap: 15% !important;
+}
+
+.project-cards {
+  .card {
+    &:hover {
+      cursor: pointer;
+      // transform: scale(0.98);
+    }
+  }
+  .card-body {
+    background-color: $primary;
+
+    .card-text {
+      @include text-style(12px, 400);
+    }
+  }
+}
+
+/*form*/
+.form {
+  padding: 15px;
+  background-color: #f6f8f7;
+}
+
+.form-heading {
+  @include text-style(36px, 700);
+}
+
+.form-heading-des {
+  @include text-style(20px, 400);
+}
+
+.form-btn,
+.footer-btn {
+  background-color: $primary;
+  width: 29%;
+  &:hover {
+    background-color: #292e3d;
+  }
+}
+
+.form-inputs {
+  width: 95% !important;
+}
+
+/*bottom*/
+.bottom {
+  gap: 15% !important;
+  padding: 5% 5% 3% 9% !important;
+}
+
+.bottom-email {
+  width: 50% !important;
+}
+
+.bottom-heading {
+  @include text-style(18px, 400);
+  color: $primary;
+}
+
+/*footer*/
+
+.footer-main {
+  background-color: $primary;
+  height: 10%;
+  .footer-text {
+    margin-left: 9%;
+  }
+}
+
+.footer-btn {
+  background-color: $hover-color;
+}
+
+.logo:hover,
+.bottom-icon:hover {
+  cursor: pointer;
+}
+
+.outline {
+  outline: none;
+}
+
+@media (min-width: 576px) {
+  .reason-item {
+    @include img-style(170px, 85vw);
+  }
+
+  /*services*/
+  .item-even,
+  .item-odd {
+    @include img-style(auto, 35%);
+  }
+
+  .card-group-v5 > card-main-v5 {
+    padding: 60px;
+    gap: 30px !important;
+  }
+
+  /*projects*/
+  .card-v7-topic {
+    @include text-style(50px, 700);
+  }
+
+  .add-bg > .btn {
+    margin: 5% 15% !important;
+  }
+
+  .one {
+    @include img-style(15px, 15px);
+
+    background-color: $primary !important;
+  }
+  .dot {
+    @include img-style(15px, 15px);
+    background-color: #f6f8f7 !important;
+    &:hover {
+      background-color: $primary !important;
+    }
+  }
+
+  .control-panel {
+    width: 39rem !important;
+  }
+
+  /*form*/
+  .form-inputs {
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  /*hero*/
+  .hero-heading {
+    @include text-style(62px, 600);
+    @include img-style(auto, 35%);
+    top: 30%;
+    left: 8%;
+  }
+
+  /*reasons*/
+  .reason-item {
+    @include img-style(210px, 320px);
+  }
+
+  /*services*/
+  .item-even,
+  .item-odd {
+    @include img-style(auto, 25%);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  /*stats*/
+  .card-num {
+    @include text-style(52px, 600);
+  }
+  .card-v7-group2 {
+    width: 40%;
+    padding: 4% 7% 4% 0%;
+  }
+
+  .card-v7-topic {
+    @include text-style(55px, 700);
+  }
+
+  .card-v7-button {
+    float: left !important;
+  }
+
+  .card-v7 {
+    padding: 40px;
+  }
+
+  /*projects*/
+  .project-item-blue {
+    color: $primary !important;
+    border-left: 2px solid $primary;
+  }
+
+  .project-cards {
+    width: 90% !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .aboutus-section {
+    padding: 20px 40px 40px 112px;
+    position: relative;
+  }
+
+  .aboutus-img {
+    @include img-style(650px, 70%);
+  }
+
+  .aboutus-text {
+    @include img-style(63%, 35vw);
+    position: absolute;
+    top: 15%;
+    right: 10%;
+  }
+
+  .project-container {
+    gap: 10% !important;
+  }
+
+  .project-cards {
+    width: 65% !important;
+  }
+
+  .project-item a {
+    &:hover {
+      cursor: pointer;
+      border-left: 3px solid $primary;
+      border-bottom: 0px;
+      color: $primary !important;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-v7-item {
+    width: 300px;
+    position: absolute;
+  }
+
+  .container-v7 {
+    position: relative;
+  }
+
+  .container-hand {
+    top: 42px;
+    left: 412px;
+
+    img {
+      position: relative;
+      bottom: 30px;
+      right: -30px;
+    }
+  }
+
+  .container-pen {
+    top: 130px;
+    left: 212px;
+
+    img {
+      position: relative;
+      bottom: 40px;
+      left: -280px;
+    }
+  }
+
+  .container-cup {
+    bottom: 75px;
+    left: 412px;
+    img {
+      position: relative;
+      bottom: 30px;
+    }
+  }
+
+  .container-pencil {
+    bottom: 1px;
+    left: 216px;
+    img {
+      position: relative;
+      top: 100px;
+      right: -20px;
+    }
+  }
+
+  .project-cards {
+    width: 60% !important;
+  }
+}
